@@ -1,3 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MisDestinos</string>
+    <string name="btn_favoritos">⭐ Mis favoritos</string>
+    <string name="btn_agregar">+ Agregar destino</string>
+    <string name="btn_volver">← Volver</string>
+    <string name="btn_agregar_favorito">Agregar a favoritos ♡</string>
+    <string name="btn_quitar_favorito">Quitar de favoritos ♥</string>
+    <string name="btn_quitar">Quitar</string>
+    <string name="btn_previsualizar">Previsualizar imagen</string>
+    <string name="btn_guardar">Guardar destino</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="sin_favoritos">Todavía no agregaste favoritos.\nEntrá a un destino y tocá el botón.</string>
+    <string name="hint_nombre">Nombre del lugar</string>
+    <string name="hint_pais">País</string>
+    <string name="hint_descripcion">Descripción</string>
+    <string name="hint_url">URL de la imagen</string>
+    <string name="msg_agregado">Agregado a favoritos ⭐</string>
+    <string name="msg_quitado">Quitado de favoritos</string>
+    <string name="msg_guardado">¡Destino guardado!</string>
+    <string name="msg_error_campos">Completá nombre, país y URL</string>
+    <string name="msg_error_imagen">No se pudo cargar esa imagen</string>
 </resources>
