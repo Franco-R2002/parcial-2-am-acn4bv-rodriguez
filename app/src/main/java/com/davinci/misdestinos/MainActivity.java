@@ -78,44 +78,54 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cargarDestinos() {
-        listaDestinos.add(new Destino("Torre Eiffel", "Francia",
+        listaDestinos.add(new Destino(
+                "Torre Eiffel", "Francia",
                 "Construida en 1889 para la Exposición Universal de París, mide 330 metros y fue durante 41 años la estructura más alta del mundo. Hoy es el monumento pago más visitado del planeta.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://picsum.photos/id/1048/800/600"));
 
-        listaDestinos.add(new Destino("Cataratas del Iguazú", "Argentina / Brasil",
+        listaDestinos.add(new Destino(
+                "Cataratas del Iguazú", "Argentina / Brasil",
                 "Sistema de cerca de 275 saltos que se extiende a lo largo de casi 3 kilómetros en la frontera entre Argentina y Brasil. Declaradas Patrimonio de la Humanidad por la UNESCO en 1984.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Iguazu_Argentina.jpg"));
 
-        listaDestinos.add(new Destino("Machu Picchu", "Perú",
+        listaDestinos.add(new Destino(
+                "Machu Picchu", "Perú",
                 "Antigua ciudadela inca construida en el siglo XV a más de 2400 metros de altura en los Andes peruanos. Permaneció oculta para el mundo occidental hasta 1911.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu,_Peru.jpg"));
 
-        listaDestinos.add(new Destino("Coliseo Romano", "Italia",
+        listaDestinos.add(new Destino(
+                "Coliseo Romano", "Italia",
                 "El anfiteatro más grande construido por el Imperio Romano, terminado en el año 80 d.C. Podía albergar a más de 50.000 espectadores en combates de gladiadores.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum_in_Rome,_Italy_-_April_2007.jpg"));
 
-        listaDestinos.add(new Destino("Gran Muralla China", "China",
+        listaDestinos.add(new Destino(
+                "Gran Muralla China", "China",
                 "Sistema de fortificaciones construido a lo largo de más de 2000 años para proteger las fronteras del norte de China. Se extiende por miles de kilómetros.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Wall_of_China_July_2006.JPG"));
 
-        listaDestinos.add(new Destino("Taj Mahal", "India",
+        listaDestinos.add(new Destino(
+                "Taj Mahal", "India",
                 "Mausoleo de mármol blanco mandado a construir en 1632 por el emperador mogol Shah Jahan en memoria de su esposa. Patrimonio de la Humanidad y una de las maravillas del mundo.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_in_March_2004.jpg"));
 
-        listaDestinos.add(new Destino("Cristo Redentor", "Brasil",
+        listaDestinos.add(new Destino(
+                "Cristo Redentor", "Brasil",
                 "Estatua art déco de 30 metros en la cima del cerro Corcovado en Río de Janeiro. Inaugurada en 1931, es uno de los símbolos más reconocidos del mundo.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Christ_the_Redeemer_-_Cristo_Redentor.jpg"));
 
-        listaDestinos.add(new Destino("Petra", "Jordania",
+        listaDestinos.add(new Destino(
+                "Petra", "Jordania",
                 "Antigua ciudad nabatea esculpida en la roca rosada del desierto jordano hace más de 2000 años. Su edificio más famoso es Al-Khazneh, El Tesoro.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Khazneh_petra_crop.jpg"));
 
-        listaDestinos.add(new Destino("Sagrada Familia", "España",
+        listaDestinos.add(new Destino(
+                "Sagrada Familia", "España",
                 "Basílica diseñada por Antoni Gaudí en Barcelona, en construcción desde 1882. Combina elementos góticos y modernistas en un estilo único en el mundo.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada_Familia_01.jpg"));
 
-        listaDestinos.add(new Destino("Estatua de la Libertad", "Estados Unidos",
+        listaDestinos.add(new Destino(
+                "Estatua de la Libertad", "Estados Unidos",
                 "Regalo de Francia a Estados Unidos en 1886, ubicada en la bahía de Nueva York. Recibió a millones de inmigrantes que llegaban al país a comienzos del siglo XX.",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/200px-Smiley.svg.png"));
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_1_New_York.JPG"));
     }
 }
