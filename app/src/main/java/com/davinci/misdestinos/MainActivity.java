@@ -78,15 +78,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cargarDestinos() {
-        listaDestinos.add(new Destino(
-                "Torre Eiffel", "Francia",
-                "Construida en 1889 para la Exposición Universal de París, mide 330 metros y fue durante 41 años la estructura más alta del mundo. Hoy es el monumento pago más visitado del planeta.",
-                "https://picsum.photos/id/1048/800/600"));
 
-        listaDestinos.add(new Destino(
-                "Cataratas del Iguazú", "Argentina / Brasil",
-                "Sistema de cerca de 275 saltos que se extiende a lo largo de casi 3 kilómetros en la frontera entre Argentina y Brasil. Declaradas Patrimonio de la Humanidad por la UNESCO en 1984.",
-                "https://commons.wikimedia.org/wiki/Special:FilePath/Iguazu_Argentina.jpg"));
+
+
 
         listaDestinos.add(new Destino(
                 "Machu Picchu", "Perú",
@@ -113,10 +107,7 @@ public class MainActivity extends AppCompatActivity {
                 "Estatua art déco de 30 metros en la cima del cerro Corcovado en Río de Janeiro. Inaugurada en 1931, es uno de los símbolos más reconocidos del mundo.",
                 "https://commons.wikimedia.org/wiki/Special:FilePath/Christ_the_Redeemer_-_Cristo_Redentor.jpg"));
 
-        listaDestinos.add(new Destino(
-                "Petra", "Jordania",
-                "Antigua ciudad nabatea esculpida en la roca rosada del desierto jordano hace más de 2000 años. Su edificio más famoso es Al-Khazneh, El Tesoro.",
-                "https://commons.wikimedia.org/wiki/Special:FilePath/Khazneh_petra_crop.jpg"));
+
 
         listaDestinos.add(new Destino(
                 "Sagrada Familia", "España",
