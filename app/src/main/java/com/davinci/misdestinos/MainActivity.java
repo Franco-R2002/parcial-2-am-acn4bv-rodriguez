@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     private LinearLayout llListaDestinos;
 
+    private Button btnFavoritos;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         llListaDestinos = findViewById(R.id.llListaDestinos);
 
-        Button btnFavoritos = findViewById(R.id.btnFavoritos);
+        btnFavoritos = findViewById(R.id.btnFavoritos);
         Button btnAgregar = findViewById(R.id.btnAgregar);
 
         btnFavoritos.setOnClickListener(v ->
@@ -46,6 +48,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         pintarLista();
+        actualizarContadorFavoritos();
+    }
+
+    private void actualizarContadorFavoritos() {
+        int cantidad = listaFavoritos.size();
+        if (cantidad == 0) {
+            btnFavoritos.setText(R.string.btn_favoritos);
+        } else {
+            btnFavoritos.setText("⭐ Mis favoritos (" + cantidad + ")");
+        }
     }
 
     private void pintarLista() {
