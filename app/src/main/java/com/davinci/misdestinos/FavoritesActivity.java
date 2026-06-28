@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
+import android.content.Intent;
 
 public class FavoritesActivity extends AppCompatActivity {
 
@@ -22,10 +23,16 @@ public class FavoritesActivity extends AppCompatActivity {
 
         llListaFavoritos = findViewById(R.id.llListaFavoritos);
         txtSinFavoritos = findViewById(R.id.txtSinFavoritos);
+        TextView txtTituloFavoritos = findViewById(R.id.txtTituloFavoritos);
 
         Button btnVolver = findViewById(R.id.btnVolverFavoritos);
         btnVolver.setOnClickListener(v -> finish());
 
+        pintarFavoritos();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
         pintarFavoritos();
     }
 
@@ -35,6 +42,7 @@ public class FavoritesActivity extends AppCompatActivity {
         if (MainActivity.listaFavoritos.isEmpty()) {
             txtSinFavoritos.setVisibility(View.VISIBLE);
             return;
+
         }
 
         txtSinFavoritos.setVisibility(View.GONE);
@@ -52,6 +60,15 @@ public class FavoritesActivity extends AppCompatActivity {
             txtPais.setText(favorito.pais);
             Glide.with(this).load(favorito.imagenUrl).centerCrop().into(img);
 
+            fila.setOnClickListener(v -> {
+                int indice = MainActivity.listaDestinos.indexOf(favorito);
+                if (indice != -1) {
+                    Intent intent = new Intent(FavoritesActivity.this, DetailActivity.class);
+                    intent.putExtra(MainActivity.EXTRA_DESTINO_ID, indice);
+                    startActivity(intent);
+                }
+            });
+
             btnQuitar.setOnClickListener(v -> {
                 MainActivity.listaFavoritos.remove(favorito);
                 llListaFavoritos.removeView(fila);
@@ -61,6 +78,13 @@ public class FavoritesActivity extends AppCompatActivity {
             });
 
             llListaFavoritos.addView(fila);
+        }
+        int cantidad = MainActivity.listaFavoritos.size();
+        TextView titulo = findViewById(R.id.txtTituloFavoritos);
+        if (cantidad > 0) {
+            titulo.setText("⭐ Mis favoritos (" + cantidad + ")");
+        } else {
+            titulo.setText("⭐ Mis favoritos");
         }
     }
 }
